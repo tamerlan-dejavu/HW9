@@ -17,6 +17,10 @@ import java.util.List;
 
 public class ChronomancerEngine {
 
+    private static final int TRAP_DAMAGE = 40;
+    private static final int TRAP_MANA   = 30;
+    private static final int TRAP_GOLD   = 50;
+
     public VaultRunResult runVault(List<Hero> party) {
         int mementosCreated = 0;
         int restoredCount = 0;
@@ -60,9 +64,9 @@ public class ChronomancerEngine {
             mementosCreated++;
             System.out.println("[Snapshot saved. Caretaker size: " + caretaker.size() + "]");
 
-            hero.takeDamage(40);
-            hero.spendMana(30);
-            hero.spendGold(50);
+            hero.takeDamage(TRAP_DAMAGE);
+            hero.spendMana(Math.min(TRAP_MANA, hero.getMana()));
+            hero.spendGold(Math.min(TRAP_GOLD, hero.getGold()));
             System.out.println("After trap  : " + hero);
 
             System.out.println("[Chronomancer rewinds time...]");
