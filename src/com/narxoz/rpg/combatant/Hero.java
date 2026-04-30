@@ -73,7 +73,7 @@ public class Hero {
     }
 
     public void restoreFromMemento(HeroMemento memento) {
-        this.hp = memento.getHp();
+        this.hp   = memento.getHp();
         this.mana = memento.getMana();
         this.gold = memento.getGold();
         this.inventory = new Inventory(memento.getInventorySnapshot());
@@ -81,6 +81,7 @@ public class Hero {
 
     @Override
     public String toString() {
-        return "Hero{name='" + name + "', hp=" + hp + ", mana=" + mana + ", gold=" + gold + "}";
+        return "Hero{name='" + name + "', hp=" + hp + "/" + maxHp
+                + ", mana=" + mana + ", gold=" + gold + "}";
     }
 }
