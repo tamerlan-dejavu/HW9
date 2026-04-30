@@ -1,8 +1,5 @@
 package com.narxoz.rpg.vault;
 
-/**
- * Summary of a Chronomancer's Vault run.
- */
 public class VaultRunResult {
 
     private final int artifactsAppraised;
@@ -15,17 +12,9 @@ public class VaultRunResult {
         this.restoredCount = restoredCount;
     }
 
-    public int getArtifactsAppraised() {
-        return artifactsAppraised;
-    }
-
-    public int getMementosCreated() {
-        return mementosCreated;
-    }
-
-    public int getRestoredCount() {
-        return restoredCount;
-    }
+    public int getArtifactsAppraised() { return artifactsAppraised; }
+    public int getMementosCreated() { return mementosCreated; }
+    public int getRestoredCount() { return restoredCount; }
 
     @Override
     public String toString() {
