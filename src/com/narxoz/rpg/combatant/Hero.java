@@ -1,6 +1,7 @@
 package com.narxoz.rpg.combatant;
 
 import com.narxoz.rpg.artifact.Inventory;
+import java.util.List;
 
 public class Hero {
 
@@ -71,7 +72,12 @@ public class Hero {
                 inventory.getArtifacts());
     }
 
-    public void restoreFromMemento(HeroMemento memento) {}
+    public void restoreFromMemento(HeroMemento memento) {
+        this.hp = memento.getHp();
+        this.mana = memento.getMana();
+        this.gold = memento.getGold();
+        this.inventory = new Inventory(memento.getInventorySnapshot());
+    }
 
     @Override
     public String toString() {
