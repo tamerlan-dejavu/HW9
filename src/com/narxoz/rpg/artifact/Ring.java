@@ -1,7 +1,6 @@
 package com.narxoz.rpg.artifact;
 
 public class Ring extends Artifact {
-
     private final int magicBonus;
 
     public Ring(String name, int value, int weight, int magicBonus) {

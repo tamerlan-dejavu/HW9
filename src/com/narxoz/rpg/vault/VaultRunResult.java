@@ -18,10 +18,6 @@ public class VaultRunResult {
 
     @Override
     public String toString() {
-        return "VaultRunResult{"
-                + "artifactsAppraised=" + artifactsAppraised
-                + ", mementosCreated=" + mementosCreated
-                + ", restoredCount=" + restoredCount
-                + '}';
-    }
+        return "VaultRunResult{" + "artifactsAppraised=" + artifactsAppraised + ", mementosCreated=" + mementosCreated + ", restoredCount=" + restoredCount + '}';
+    } 
 }

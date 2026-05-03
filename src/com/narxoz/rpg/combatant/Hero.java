@@ -1,8 +1,6 @@
 package com.narxoz.rpg.combatant;
 
 import com.narxoz.rpg.artifact.Inventory;
-import java.util.List;
-
 public class Hero {
 
     private final String name;
@@ -81,7 +79,6 @@ public class Hero {
 
     @Override
     public String toString() {
-        return "Hero{name='" + name + "', hp=" + hp + "/" + maxHp
-                + ", mana=" + mana + ", gold=" + gold + "}";
+        return "Hero {name='" + name + "', hp=" + hp + "/" + maxHp  + ", mana=" + mana + ", gold=" + gold + "}";
     }
 }

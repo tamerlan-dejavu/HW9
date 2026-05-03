@@ -1,7 +1,6 @@
 package com.narxoz.rpg.artifact;
 
 public class Potion extends Artifact {
-
     private final int healing;
 
     public Potion(String name, int value, int weight, int healing) {
